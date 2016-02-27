@@ -1,6 +1,6 @@
-ssh access different host with different secret key
+# ssh access different host with different secret key
 
-    Host name
+    Host domain.com
             Hostname domain.com
             User root
             IdentityFile /dir/dir/secret_key
