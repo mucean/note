@@ -37,3 +37,5 @@ Calling this method with a log level not defined by this specification **MUST** 
 `Psr\Log\InvalidArgumentException` if the implementation does not know about the level.
 Users **SHOULT NOT** use a custom level without knowing for sure the current implementation
 support it.
+
+### psr-7 Http message interfaces
