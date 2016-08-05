@@ -29,5 +29,13 @@ braces MUST go on the next line after the body.
 and closing parentheses for control structures MUST NOT have a space before.
 - - -
 ### psr-3 Logger Interface
+*   The `LoggerInterface` exposes eight methods to write logs to the eight [RFC 5424][rfc5424] levels
+(debug, info, notice, warning, error, critical, alert, emergency).
+*   A ninth method `log`, accepts a log level at first argument. Calling this method with
+one of the log level **MUST** have the same result as calling the level-specific method.
+Calling this method with a log level not defined by this specification **MUST** throw a
+`Psr\Log\InvalidArgumentException` if the implementation does not know about the level.
+Users **SHOULT NOT** use a custom level without knowing for sure the current implementation
+support it.
 
 ### psr-7 Http message interfaces
