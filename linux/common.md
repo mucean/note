@@ -6,3 +6,7 @@
         uname -a                                        // look linux image is using
         sudo apt-get purge linux-image....              // delete old linux image
         sudo apt-get purge linux-headers...             // delete old linux header
+
+*   show mac, ip, dns information
+
+        nmcli dev show
