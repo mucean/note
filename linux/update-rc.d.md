@@ -1,6 +1,6 @@
 ## add
 
-    update-rc.d [filename] default
+    update-rc.d [filename] defaults
 
 ## remove
 
